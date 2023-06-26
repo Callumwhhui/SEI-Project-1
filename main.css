@@ -1,30 +1,54 @@
 *{
     box-sizing: border-box;
+    font-family: 'Belanosima', sans-serif;
 }
 
 body {
     height: 100vh;
-    background-color: rgb(52, 52, 52);
+    background-color: #05386B;
 }
 
 header{
     display: flex;
     justify-content: center;
+    letter-spacing: 10px; 
+    color: #edf5e1;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    color: #edf5e1;
+    text-align: center;
 }
 
 .topBar{
     display: flex;
     justify-content: space-evenly;
+    color: #edf5e1;
+}
+
+.gameStatus {
+    display: flex;
+    justify-content: center;
+    letter-spacing: 5px;
+    color: #edf5e1;
+}
+
+#timer {
+    letter-spacing: 5px;
 }
 
 #game-board {
-    border: 1px solid red;
     width: 640px;
     height: 640px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     margin: auto;
+    /* 3d effect */
+    perspective: 1000px; 
 }
 
 .game-card {
@@ -33,6 +57,13 @@ header{
     height: calc(25% - 10px);
     position: relative;
     transform: scale(1);
+    /* 3d effect */
+    transform-style: preserve-3d;
+    transition: transform .5s;
+}
+
+.game-card.flip {
+    transform: rotateY(180deg);
 }
 
 .game-card:active {
@@ -40,14 +71,40 @@ header{
     transition: transform .2s;
 }
 
+
 .front-face,
 .back-face {
-    border: 1px solid rgb(0, 42, 255);
     position: absolute;
     width: 100%;
     height: 100%;
     padding: 20px;
     border-radius: 5px;
-    background-color: rgb(105, 213, 213);
+    background-color: #379683;
+    backface-visibility: hidden;
 }
+
+.front-face{
+    transform: rotateY(180deg);
+}
+
+button {
+    color: #edf5e1;
+    background-color: #379683;
+    border: none;
+    border-radius: 15px;
+    width: 120px;
+    height: 50px;
+}
+
+button:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 0.25s;
+}
+
+button:active {
+    background-color: #308473;
+}
+
+
 

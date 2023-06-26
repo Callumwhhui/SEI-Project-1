@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Belanosima&display=swap" rel="stylesheet">
+<link href='https://unpkg.com/css.gg@2.0.0/icons/css/chevron-right.css' rel='stylesheet'>
     <title>Concentration Game</title>
     <link rel="stylesheet" href="main.css">
     <script defer src="project1.js"></script>
@@ -12,78 +16,79 @@
     <header>
         <h1>Concetration Game</h1>
     </header>
-     <h2 class="gameStatus"></h2>
+     <h2 class="gameStatus">Begin!</h2>
     <section class="topBar">
-        <h3>Time Left:</h3>
-        <button>Play again</button>
+        <h3 id="timer"></h3>
+        <button>Restart</button>
     </section>
     <section id="game-board">
-        <div class="game-card">
+        <div class="game-card" data-img="pineapple">
             <img class= "front-face"src="projectimgs/pineapple.png" alt="pineapple">
             <img src="projectimgs/backimg.png" alt="logo" class="back-face">
         </div>
-        <div class="game-card">
+        <div class="game-card" data-img="pineapple">
             <img class= "front-face"src="projectimgs/pineapple.png" alt="pineapple">
             <img src="projectimgs/backimg.png" alt="logo" class="back-face">
         </div>
-        <div class="game-card">
+        <div class="game-card" data-img="apple">
             <img src="projectimgs/apple.png" alt="apple" class="front-face">
             <img src="projectimgs/backimg.png" alt="logo" class="back-face">
         </div>
-        <div class="game-card">
+        <div class="game-card" data-img="apple">
             <img src="projectimgs/apple.png" alt="apple" class="front-face">
             <img src="projectimgs/backimg.png" alt="logo" class="back-face">
         </div>
-        <div class="game-card">
+        <div class="game-card" data-img="banana">
             <img src="projectimgs/banana.png" alt="banana" class="front-face">
             <img src="projectimgs/backimg.png" alt="logo" class="back-face">
         </div>
-        <div class="game-card">
+        <div class="game-card" data-img="banana">
             <img src="projectimgs/banana.png" alt="banana" class="front-face">
             <img src="projectimgs/backimg.png" alt="logo" class="back-face">
         </div>
-        <div class="game-card">
+        <div class="game-card" data-img="cherry">
             <img src="projectimgs/cherry.png" alt="cherry" class="front-face">
             <img src="projectimgs/backimg.png" alt="logo" class="back-face">
         </div>
-        <div class="game-card">
+        <div class="game-card" data-img="cherry">
             <img src="projectimgs/cherry.png" alt="cherry" class="front-face">
             <img src="projectimgs/backimg.png" alt="logo" class="back-face">
         </div>
-        <div class="game-card">
+        <div class="game-card" data-img="grape">
             <img src="projectimgs/grape.png" alt="grape" class="front-face">
             <img src="projectimgs/backimg.png" alt="logo" class="back-face">
         </div>
-        <div class="game-card">
+        <div class="game-card" data-img="grape">
             <img src="projectimgs/grape.png" alt="grape" class="front-face">
             <img src="projectimgs/backimg.png" alt="logo" class="back-face">
         </div>
-        <div class="game-card">
+        <div class="game-card" data-img="orange">
             <img src="projectimgs/orange.png" alt="orange" class="front-face">
             <img src="projectimgs/backimg.png" alt="logo" class="back-face">
         </div>
-        <div class="game-card">
+        <div class="game-card" data-img="orange">
             <img src="projectimgs/orange.png" alt="orange" class="front-face">
             <img src="projectimgs/backimg.png" alt="logo" class="back-face">
         </div>
-        <div class="game-card">
+        <div class="game-card" data-img="passion">
             <img src="projectimgs/passion.png" alt="passion" class="front-face">
             <img src="projectimgs/backimg.png" alt="logo" class="back-face">
         </div>
-        <div class="game-card">
+        <div class="game-card" data-img="passion">
             <img src="projectimgs/passion.png" alt="passion" class="front-face">
             <img src="projectimgs/backimg.png" alt="logo" class="back-face">
         </div>
-        <div class="game-card">
+        <div class="game-card" data-img="strawberry">
             <img src="projectimgs/strawberry.png" alt="strawberry" class="front-face">
             <img src="projectimgs/backimg.png" alt="logo" class="back-face">
         </div>
-        <div class="game-card">
+        <div class="game-card" data-img="strawberry">
             <img src="projectimgs/strawberry.png" alt="strawberry" class="front-face">
             <img src="projectimgs/backimg.png" alt="logo" class="back-face">
         </div>
     </section>
 
+<footer>Site Design + code 2023 <br>Callum Hui</footer>
     
 
 </body>

@@ -3,29 +3,42 @@
 }
 
 body {
-    background-color: rgb(52, 52, 52);
+    background-color: #05386B;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
     font-family: 'Belanosima', sans-serif;
-    color: rgb(105, 213, 213);
+    color: #edf5e1;
 }
 
 button {
     height: 10vh;
     width: 30vh;
-    background-color: rgb(105, 213, 213);
+    background-color: #379683;
     border-radius: 5vh;
     border-style: none;
-    font-size: 20px;
-    color: rgb(52, 52, 52);
+    font-size: 40px;
+    color: #edf5e1;
 }
 
 button:hover {
-    background-color: rgb(64, 132, 132);
-    color: rgb(105, 213, 213);
     cursor: pointer;
+    transform: scale(1.1);
+    transition: 0.25s;
+}
+
+button:active {
+    background-color: #308473;
+}
+
+.title {
+    letter-spacing: 5px;
+    font-size: 70px;
+}
+
+.question {
+    letter-spacing: 5px;
 }
 
