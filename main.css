@@ -13,17 +13,23 @@ header{
     justify-content: center;
     letter-spacing: 10px; 
     color: #edf5e1;
+    margin: 0 auto 0 auto;
+    width: 640px;
+    font-size: 25px;
 }
 
 footer {
     display: flex;
     justify-content: center;
-    margin-top: 30px;
+    margin: 30px auto 0 auto;
     color: #edf5e1;
     text-align: center;
+    width: 640px;
 }
 
 .topBar{
+    margin: 0 auto 0 auto;
+    width: 640px;
     display: flex;
     justify-content: space-evenly;
     color: #edf5e1;
@@ -34,6 +40,12 @@ footer {
     justify-content: center;
     letter-spacing: 5px;
     color: #edf5e1;
+    width: 640px;
+    margin: 0 auto 0 auto;
+}
+
+#move-counter{
+    letter-spacing: 5px;
 }
 
 #timer {
@@ -93,7 +105,8 @@ button {
     border: none;
     border-radius: 15px;
     width: 120px;
-    height: 50px;
+    height: 45px;
+    font-size: 18px;
 }
 
 button:hover {
@@ -105,6 +118,5 @@ button:hover {
 button:active {
     background-color: #308473;
 }
-
 
 

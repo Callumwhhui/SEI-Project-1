@@ -4,13 +4,14 @@ let hasFlippedCard = false;
 let firstCard, secondCard;
 let lockBoard = false;
 let timeLeft = 61;
+let moveCount = 0;
 
 // elements 
 const cards = document.querySelectorAll('.game-card')
 const gameStatus = document.querySelector('.gameStatus')
 const timer = document.getElementById('timer')
 const playAgainBtn = document.querySelector('button')
-
+const moveCounter = document.getElementById('move-counter')
 
 // event listeners
 
@@ -47,22 +48,22 @@ function checkForMatch () {
     let isMatch = firstCard.dataset.img === secondCard.dataset.img;
 // !!turnery function. refactored an if,else into one line!!
     isMatch ? disableCards() : unflipCards();
+    plusMoveCount();
 }
 
 function disableCards() {
-    firstCard.removeEventListener('click', flipCard)
-    secondCard.removeEventListener('click', flipCard)
+    firstCard.removeEventListener('click', flipCard);
+    secondCard.removeEventListener('click', flipCard);
     aMatch();
     resetBoard();
     checkGameEnd();
-    
 }
 
 function unflipCards () {
     lockBoard = true;
     setTimeout(() => {
-        firstCard.classList.remove('flip')
-        secondCard.classList.remove('flip')
+        firstCard.classList.remove('flip');
+        secondCard.classList.remove('flip');
 
         resetBoard();
         noMatch();
@@ -109,17 +110,18 @@ function startTimer() {
     timer.innerText = `Time Left: ${timeLeft}s`;
     lockBoard = false;
     gameStatus.textContent = 'Begin!';
+    
 
     cards.forEach(card => {
         card.classList.remove('flip');
         card.addEventListener('click', flipCard);
       });
-
+      resetMoveCount();
       resetBoard();
       shuffle();
       startTimer(); 
   }
-
+// extra functionality!
   function noMatch () {
     gameStatus.innerText = 'No match try again!'
   }
@@ -127,3 +129,18 @@ function startTimer() {
   function aMatch () {
     gameStatus.innerText = 'A match! Good job keep going!'
   }
+
+function plusMoveCount () {
+    moveCount++;
+    updateMoveCount();
+}
+
+function updateMoveCount () {
+    moveCounter.textContent = `Moves: ${moveCount}`;
+}
+
+function resetMoveCount () {
+    moveCount = 0;
+    updateMoveCount();
+}
+
