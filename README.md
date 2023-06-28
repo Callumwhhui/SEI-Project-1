@@ -2,7 +2,9 @@
 
 Concentration Game is a memory-based card matching game where players have to flip cards and find matching pairs. The objective of the game is to match all the pairs within a certain time limit.
 
-![Game Screenshot]
+
+<img src="projectimgs/start-page.png" alt= "start-page">
+<img src="projectimgs/main-img.png" alt= "main-game">
 
 ## Features
 
