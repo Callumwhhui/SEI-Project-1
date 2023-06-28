@@ -18,6 +18,7 @@ header{
     font-size: 25px;
 }
 
+
 footer {
     display: flex;
     justify-content: center;
@@ -28,7 +29,7 @@ footer {
 }
 
 .topBar{
-    margin: 0 auto 0 auto;
+    margin: 10px auto 0 auto;
     width: 640px;
     display: flex;
     justify-content: space-evenly;
@@ -120,3 +121,48 @@ button:active {
 }
 
 
+@keyframes noMatchAnimation {
+    0% {
+      opacity: 0;
+    }
+    20% {
+      opacity: 1;
+      color: red;
+    }
+    80% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @keyframes matchAnimation {
+    0% {
+        transform: scale(1);
+    }
+    20%{
+        transform: scale(1.1);
+        color: #5cdb95;
+    }
+    50% {
+        transform: scale(1);
+    }
+    80% {
+        transform: scale(1.1);
+        color: #5cdb95;
+    }
+    100% {
+        transform: scale(1);
+    }
+  }
+  
+  .no-match-animation {
+    animation-name: noMatchAnimation;
+    animation-duration: 1s;
+  }
+
+  .match-animation {
+    animation-name: matchAnimation;
+    animation-duration: 1s;
+  }

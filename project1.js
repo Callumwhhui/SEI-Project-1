@@ -101,6 +101,10 @@ function startTimer() {
     if (document.querySelectorAll('.game-card.flip').length === cards.length) {
       clearInterval(timerInterval);
       gameStatus.textContent = 'Congratulations! You won!';
+      gameStatus.classList.add('match-animation');
+    setTimeout(()=>{
+        gameStatus.classList.remove('match-animation')
+    },1000);
     }
   }
 
@@ -123,11 +127,19 @@ function startTimer() {
   }
 // extra functionality!
   function noMatch () {
-    gameStatus.innerText = 'No match try again!'
+    gameStatus.innerText = 'No match try again!';
+    gameStatus.classList.add('no-match-animation');
+    setTimeout(()=>{
+        gameStatus.classList.remove('no-match-animation')
+    },1000);
   }
 
   function aMatch () {
-    gameStatus.innerText = 'A match! Good job keep going!'
+    gameStatus.innerText = 'A match! Good job keep going!';
+    gameStatus.classList.add('match-animation');
+    setTimeout(()=>{
+        gameStatus.classList.remove('match-animation')
+    },1000);
   }
 
 function plusMoveCount () {
