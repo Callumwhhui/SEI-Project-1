@@ -56,7 +56,7 @@ I  started build/code process by setting up the basic HTML structurre for my gam
 I then moved onto syling the game so that I could define the layout I wanted. this also helped me visualise what the game would look like. 
 
 ### JavaScript - state variables 
-The next step waas then to create all the variables that would hold my game state:
+The next step was then to create all the variables that would hold my game state:
 ```
 let hasFlippedCard = false;
 let firstCard, secondCard;
