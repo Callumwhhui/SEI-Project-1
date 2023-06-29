@@ -23,8 +23,7 @@ Concentration Game is a memory-based card matching game where players have to fl
 
 ## Setup and Usage
 
-1. Clone the repository or download the project files.
-2. Open the `startpage.HTML` file in a web browser.
+1. Follow this link: https://callumwhhui.github.io/SEI-Project-1/
 3. Press play when you're ready to start playing.
 4. The game will start automatically.
 5. Click on the cards to flip them and try to match all the pairs.
