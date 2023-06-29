@@ -2,7 +2,7 @@
 
 Concentration Game is a memory-based card matching game where players have to flip cards and find matching pairs. The objective of the game is to match all the pairs within a certain time limit.
 
-
+## What the finished project looks like
 <img src="projectimgs/start-page.png" alt= "start-page">
 <img src="projectimgs/main-img.png" alt= "main-game">
 
@@ -20,6 +20,11 @@ Concentration Game is a memory-based card matching game where players have to fl
 - HTML
 - CSS
 - JavaScript
+- Git Hub
+- Visual Studio Code 
+- Command Line
+- Image source: [flaticon.com ](https://www.flaticon.com/)
+- Wireframing tool: https://excalidraw.com/ 
 
 ## Setup and Usage
 
@@ -31,6 +36,17 @@ Concentration Game is a memory-based card matching game where players have to fl
 7. If you complete the game within the time limit, a winning message will be displayed.
 8. To restart the game, click on the "Restart" button.
 
+## Timeframe & Working Team 
+
+This project was worked on soley by me. I was given 5 days to complete this project and this project was completed within 5 days.
+
+## Project Planning - Wireframes 
+
+![Screenshot 2023-06-29 at 10 22 04](https://github.com/Callumwhhui/SEI-Project-1/assets/130695899/92de422e-896e-4ad0-a727-261043675cca)
+
+![Screenshot 2023-06-29 at 10 24 28](https://github.com/Callumwhhui/SEI-Project-1/assets/130695899/ef206070-6819-43d2-885f-a9ace2158cd8)
+
+
 ## Customization
 
 - To customize the images used in the game, replace the existing images in the `projectimgs` folder with your own images. Make sure the image filenames match the values assigned to the `data-img` attributes of the card elements in the HTML.
@@ -39,5 +55,3 @@ Concentration Game is a memory-based card matching game where players have to fl
 ## Contributions
 
 Contributions to the project are welcome! If you find any issues or would like to suggest enhancements, feel free to submit a pull request.
-
-## License
