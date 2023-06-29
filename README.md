@@ -46,6 +46,13 @@ This project was worked on soley by me. I was given 5 days to complete this proj
 
 ![Screenshot 2023-06-29 at 10 24 28](https://github.com/Callumwhhui/SEI-Project-1/assets/130695899/ef206070-6819-43d2-885f-a9ace2158cd8)
 
+## Future Improvements 
+
+- Select difficulty.
+  1. decrease time to beat game.
+  2. increase amount of cards.
+  
+- display highscores. 
 
 ## Customization
 
